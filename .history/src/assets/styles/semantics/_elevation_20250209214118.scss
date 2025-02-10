@@ -1,0 +1,5 @@
+@use "../primitives/elevation" as elevation;
+
+$semantic-shadow-light: elevation.$shadow-small;
+$semantic-shadow-medium: elevation.$shadow-medium;
+$semantic-shadow-heavy: elevation.$shadow-large;

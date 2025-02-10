@@ -1,0 +1,40 @@
+@use "primitives/colors" as primitives;
+@use "primitives/typography" as primitivesTypo;
+@use "primitives/spacing" as primitivesSpacing;
+@use "primitives/elevation" as primitivesElevation;
+@use "primitives/grid" as primitivesGrid;
+
+@use "semantics/colors" as semantics;
+@use "semantics/typography" as semanticsTypo;
+@use "semantics/spacing" as semanticsSpacing;
+@use "semantics/elevation" as semanticsElevation;
+@use "semantics/grid" as semanticsGrid;
+
+// Use Primitives
+body {
+  background-color: semantics.$semantic-background;
+  color: semantics.$semantic-text;
+  font-family: semanticsTypo.$semantic-font-primary;
+}
+
+// Use Semantics
+.card {
+  background-color: semantics.$semantic-background;
+  color: semantics.$semantic-text;
+  box-shadow: semanticsElevation.$semantic-shadow-medium;
+  padding: semanticsSpacing.$semantic-spacing-small;
+  border: 1px solid semantics.$semantic-border;
+}
+
+// Buttons
+.button {
+  background-color: semantics.$semantic-primary;
+  color: semantics.$semantic-text;
+  padding: semanticsSpacing.$semantic-spacing-medium;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+  
+  &:hover {
+    background-color: semantics.$semantic-secondary;
+  }
+}

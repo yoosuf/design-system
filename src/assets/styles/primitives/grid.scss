@@ -1,0 +1,4 @@
+@use "../variables.scss";
+
+$grid-columns: var(--grid-columns, 12);
+$grid-gap: var(--grid-gap, 16px);

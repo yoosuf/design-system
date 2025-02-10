@@ -1,0 +1,7 @@
+@use "../primitives/colors" as primitives;
+
+$semantic-background: primitives.$color-background;
+$semantic-text: primitives.$color-text;
+$semantic-primary: primitives.$color-primary;
+$semantic-secondary: primitives.$color-secondary;
+$semantic-border: primitives.$color-border;

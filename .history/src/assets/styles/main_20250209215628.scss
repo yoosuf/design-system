@@ -1,0 +1,19 @@
+
+@use "semantics/colors";
+@use "semantics/elevation";
+@use "semantics/grid";
+@use "semantics/spacing";
+@use "semantics/typography";
+
+
+// Example usage
+body {
+  background-color: semantics.$semantic-background;
+  color: semantics.$semantic-text;
+  font-size: semantics.$semantic-font-body;
+}
+
+.card {
+  box-shadow: semantics.$semantic-shadow-medium;
+  padding: semantics.$semantic-spacing-sm;
+}

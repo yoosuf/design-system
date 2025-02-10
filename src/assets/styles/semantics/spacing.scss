@@ -1,0 +1,5 @@
+@use "../primitives/spacing" as primitivesSpacing;
+
+$semantic-spacing-small: primitivesSpacing.$spacing-small;
+$semantic-spacing-medium: primitivesSpacing.$spacing-medium;
+$semantic-spacing-large: primitivesSpacing.$spacing-large;

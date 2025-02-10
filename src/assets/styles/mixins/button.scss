@@ -1,0 +1,57 @@
+@use "sass:color"; // SCSS built-in color functions
+@use "sass:meta";
+@use "../semantics/colors" as *;
+@use "../primitives/colors" as *;
+
+/// Advanced Button State Mixin
+@mixin button-state(
+  $base-color: $semantic-primary, 
+  $hover-variation: 8%, 
+  $active-variation: 12%, 
+  $variation-type: darken,
+  $state-type: default
+) {
+  // Determine color manipulation function
+  $hover-func: meta.get-function($variation-type);
+  $active-func: $hover-func;
+
+  // Ensure $base-color is a valid color
+  $color-value: if(type-of($base-color) == color, $base-color, $color-primary);
+
+  @if $state-type == default {
+    &:hover {
+      background-color: meta.call($hover-func, $color-value, $hover-variation);
+      transition: all 0.3s ease;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    &:active {
+      background-color: meta.call($active-func, $color-value, $active-variation);
+      transition: all 0.2s ease;
+      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+      transform: translateY(1px);
+    }
+  } @else if $state-type == outline {
+    &:hover {
+      background-color: meta.call($hover-func, $color-value, $hover-variation);
+      color: adjust-color($color-value, $lightness: 100%);
+      transition: all 0.3s ease;
+    }
+    
+    &:active {
+      background-color: meta.call($active-func, $color-value, $active-variation);
+      color: adjust-color($color-value, $lightness: 100%);
+      transition: all 0.2s ease;
+    }
+  }
+}
+
+/// Shorthand for outline button states
+@mixin outline-button-state(
+  $base-color: $semantic-primary, 
+  $hover-variation: 8%, 
+  $active-variation: 12%,
+  $variation-type: lighten
+) {
+  @include button-state($base-color, $hover-variation, $active-variation, $variation-type, outline);
+}

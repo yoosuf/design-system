@@ -1,0 +1,5 @@
+@use "../variables.scss";
+
+$spacing-small: var(--spacing-small, 8px);
+$spacing-medium: var(--spacing-medium, 16px);
+$spacing-large: var(--spacing-large, 24px);

@@ -1,0 +1,13 @@
+// Import primitives
+@use "primitives/colors";
+@use "primitives/elevation";
+@use "primitives/grid";
+@use "primitives/spacing";
+@use "primitives/typography";
+
+// Import semantics (Use aliases to prevent namespace conflicts)
+@use "semantics/colors" as semanticsColors;
+@use "semantics/elevation" as semanticsElevation;
+@use "semantics/grid" as semanticsColors;
+@use "semantics/spacing" as semanticsColors;
+@use "semantics/typography" as semanticsColors;

@@ -1,0 +1,4 @@
+@use "../primitives/grid" as grid;
+
+$semantic-grid-columns: grid.$grid-columns;
+$semantic-grid-gap: grid.$grid-gap;

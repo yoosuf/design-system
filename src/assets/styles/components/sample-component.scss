@@ -1,0 +1,30 @@
+@use "../semantics/colors" as semanticsColors;
+@use "../semantics/typography" as semanticsTypo;
+@use "../semantics/spacing" as semanticsSpacing;
+@use "../semantics/elevation" as semanticsElevation;
+
+.sample-component {
+  background-color: semanticsColors.$semantic-background;
+  color: semanticsColors.$semantic-text;
+  font-family: semanticsTypo.$semantic-font-primary;
+  padding: semanticsSpacing.$semantic-spacing-large;
+  border-radius: 8px;
+  box-shadow: semanticsElevation.$semantic-shadow-medium;
+  text-align: center;
+  max-width: 600px;
+  margin: 20px auto;
+
+  h1 {
+    font-size: semanticsTypo.$semantic-font-size-lg;
+    color: semanticsColors.$semantic-primary;
+  }
+
+  p {
+    font-size: semanticsTypo.$semantic-font-size-md;
+  }
+
+  &.dark {
+    background-color: semanticsColors.$semantic-background;
+    color: semanticsColors.$semantic-text;
+  }
+}

@@ -1,0 +1,4 @@
+@use "../primitives/typography" as typography;
+
+$semantic-font-body: typography.$font-size-md;
+$semantic-font-title: typography.$font-size-lg;

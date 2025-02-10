@@ -1,0 +1,27 @@
+@import "variables.scss";
+
+// Import Primitives
+@import "primitives/colors.scss";
+@import "primitives/elevation.scss";
+@import "primitives/grid.scss";
+@import "primitives/spacing.scss";
+@import "primitives/typography.scss";
+
+// Import Semantics
+@import "semantics/colors.scss";
+@import "semantics/elevation.scss";
+@import "semantics/grid.scss";
+@import "semantics/spacing.scss";
+@import "semantics/typography.scss";
+
+// Example usage
+body {
+  background-color: $semantic-background;
+  color: $semantic-text;
+  font-size: $semantic-font-body;
+}
+
+.card {
+  box-shadow: $semantic-shadow-medium;
+  padding: $semantic-spacing-sm;
+}

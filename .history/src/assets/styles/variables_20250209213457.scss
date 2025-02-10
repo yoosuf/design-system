@@ -1,0 +1,13 @@
+@use "index.scss";
+
+// Example usage
+body {
+  background-color: semantics.$semantic-background;
+  color: semantics.$semantic-text;
+  font-size: semantics.$semantic-font-body;
+}
+
+.card {
+  box-shadow: semantics.$semantic-shadow-medium;
+  padding: semantics.$semantic-spacing-sm;
+}
