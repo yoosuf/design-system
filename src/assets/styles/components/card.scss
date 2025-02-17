@@ -4,15 +4,13 @@
 @use "../semantics/elevation" as semanticsElevation;
 
 .sample-component {
-  background-color: semanticsColors.$semantic-background;
-  color: semanticsColors.$semantic-text;
+  background-color: semanticsColors.$semantic-background-primary;
   font-family: semanticsTypo.$semantic-font-primary;
   padding: semanticsSpacing.$semantic-spacing-large;
-  border-radius: 8px;
+  border-radius: semanticsSpacing.$semantic-spacing-small;
   box-shadow: semanticsElevation.$semantic-shadow-medium;
   text-align: center;
-  max-width: 600px;
-  margin: 20px auto;
+  margin: semanticsSpacing.$semantic-spacing-small auto;
 
   h1 {
     font-size: semanticsTypo.$semantic-font-size-lg;
@@ -21,10 +19,7 @@
 
   p {
     font-size: semanticsTypo.$semantic-font-size-md;
-  }
+    color: semanticsColors.$semantic-primary;
 
-  &.dark {
-    background-color: semanticsColors.$semantic-background;
-    color: semanticsColors.$semantic-text;
   }
 }

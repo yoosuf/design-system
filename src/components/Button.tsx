@@ -1,8 +1,8 @@
 import React from "react";
-import "../assets/styles/components/sample-button.scss";
+import "../assets/styles/components/button.scss";
 
 interface SampleButtonProps {
-  variant?: "primary" | "outline" | "disabled";
+  variant?: "primary" | "secondary" | "tertiary" | "outline" | "disabled";
   onClick?: () => void;
   children: React.ReactNode;
 }
@@ -14,7 +14,7 @@ const SampleButton: React.FC<SampleButtonProps> = ({
 }) => {
   return (
     <button 
-      className={`sample-button ${variant}`}
+      className={`button ${variant}`}
       onClick={variant !== "disabled" ? onClick : undefined}
     >
       {children}

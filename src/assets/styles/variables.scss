@@ -1,49 +1,194 @@
 :root {
-  --color-primary: #D33992;
-  --color-secondary: #001040;
-  --color-background: #ffffff;
-  --color-text: #212121;
-  --color-border: #e0e0e0;
+  /* Grey Transparent Light Colors */
+  --grey-light-1000: #001040;
+  --grey-light-700: #001040b2;
+  --grey-light-500: #00104073;
+  --grey-light-100: #0010401a;
+  --grey-light-50: #0010400f;
+  --grey-light-25: #00158005;
 
-  --shadow-small: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-  --shadow-medium: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-  --shadow-large: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  /* Grey Transparent Dark Colors */
+  --grey-dark-1000: #ffffff;
+  --grey-dark-700: #ffffffc7;
+  --grey-dark-500: #ffffff99;
+  --grey-dark-100: #ffffff29;
+  --grey-dark-50: #ffffff1f;
+  --grey-dark-25: #ffffff0a;
 
-  --grid-columns: 12;
-  --grid-gap: 16px;
+  /* Grey Colors */
+  --grey-1000: var(--grey-light-1000);
+  --grey-700: var(--grey-light-700);
+  --grey-500: var(--grey-light-500);
+  --grey-100: var(--grey-light-100);
+  --grey-50: var(--grey-light-50);
+  --grey-25: var(--grey-light-25);
 
-  --spacing-small: 8px;
-  --spacing-medium: 16px;
-  --spacing-large: 24px;
+  /* Grey Solid Colors */
+  --grey-solid-1000: #000b33;
+  --grey-solid-900: #001040;
+  --grey-solid-850: #1A2853;
+  --grey-solid-800: #26345d;
+  --grey-solid-50: #f5f6fa;
+  --grey-solid-0: #ffffff;
 
-  --font-size-sm: 12px;
-  --font-size-md: 16px;
-  --font-size-lg: 24px;
+  /* Brand Colors */
+  --brand-1000: #d33992;
+  --brand-800: #d33992cc;
+  --brand-200: #d3399233;
+  --brand-50: #d339920f;
+  --brand-hover: hsl(from var(--brand-1000) h s calc(l * 0.92));
+  --brand-press: hsl(from var(--brand-1000) h s calc(l * 0.84));
 
-  --font-primary: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  /* Green Colors */
+  --green-1000: #057d41;
+  --green-800: #057d41cc;
+  --green-200: #057d4133;
+  --green-50: #0acc4b0d;
+  --green-hover: hsl(from var(--green-1000) h s calc(l * 0.92));
+  --green-press: hsl(from var(--green-1000) h s calc(l * 0.84));
+
+  /* Red Colors */
+  --red-1000: #c51919;
+  --red-800: #c51919cc;
+  --red-200: #c5191924;
+  --red-50: #ff4a4a0d;
+  --red-hover: hsl(from var(--red-1000) h s calc(l * 0.92));
+  --red-press: hsl(from var(--red-1000) h s calc(l * 0.84));
+
+  /* Amber Colors */
+  --amber-1000: #c75300;
+  --amber-800: #e35300cc;
+  --amber-200: #ff6a0033;
+  --amber-50: #ff80000d;
+  --amber-hover: hsl(from var(--amber-1000) h s calc(l * 0.92));
+  --amber-press: hsl(from var(--amber-1000) h s calc(l * 0.84));
+
+  /* Teal Colors */
+  --teal-1000: #4065d6;
+  --teal-800: #4065d6cc;
+  --teal-200: #4065d633;
+  --teal-50: #3377ff0d;
+  --teal-hover: hsl(from var(--teal-1000) h s calc(l * 0.92));
+  --teal-press: hsl(from var(--teal-1000) h s calc(l * 0.84));
+
+  /* Yellow Colors */
+  --yellow-solid-1000: #fec62e;
+  --yellow-hover: hsl(from var(--yellow-solid-1000) h s calc(l * 0.92));
+  --yellow-press: hsl(from var(--yellow-solid-1000) h s calc(l * 0.84));
+
+  /* Accenyt Color */
+
+  /* inverse colors are not part of the semantic colors. defining inverse colors as css variables to make sure they are compatible with light/dark mode */
+
+  --text-inverse-strong: var(--grey-dark-1000);
+  --text-inverse-weak: var(--grey-dark-700);
+  --text-inverse-disabled: var(--grey-dark-100);
+
+  --stroke-inverse-strong: var(--grey-dark-500);
+  --stroke-inverse-weak: var(--grey-dark-100);
+  --stroke-inverse-disabled: var(--grey-dark-100);
+
+  --icon-inverse: var(--grey-dark-500);
+  --icon-inverse-strong: var(--grey-dark-1000);
+  --icon-inverse-disabled: var(--grey-dark-100);
+
+  --fill-inverse-strong: var(--grey-solid-0);
+  --fill-inverse-weak: var(--grey-dark-50);
+  --fill-inverse-hover: var(--grey-dark-100);
+  --fill-inverse-press: var(--grey-dark-200);
+  --fill-inverse-disabled: var(--grey-dark-100);
+
+  /* background colors does not follow a consistent naming convention as rest of the semantic colors. defining background semantic colors as css variables to  make sure they are compatible with light/dark mode*/
+
+  /* Background solid colors */
+  --background-base: var(--grey-solid-0);
+  --background-raised: var(--grey-solid-0);
+  --background-overlay: var(--grey-solid-0);
+  --background-sunken: var(--grey-solid-50);
+  --background-alternate: var(--grey-solid-50);
+  --background-brand: var(--brand-1000);
+  --background-inverse: var(--grey-solid-900);
 }
 
 [data-theme="dark"] {
-  --color-primary: #FFBFE4;
-  --color-secondary: #FFFFFF;
-  --color-background: #121212;
-  --color-text: #dbdbdb;
-  --color-border: #333333;
+  --grey-1000: var(--grey-dark-1000);
+  --grey-700: var(--grey-dark-700);
+  --grey-500: var(--grey-dark-500);
+  --grey-100: var(--grey-dark-100);
+  --grey-50: var(--grey-dark-50);
+  --grey-25: var(--grey-dark-25);
 
-  --shadow-small: 0 1px 3px rgba(255, 255, 255, 0.12), 0 1px 2px rgba(255, 255, 255, 0.24);
-  --shadow-medium: 0 3px 6px rgba(255, 255, 255, 0.16), 0 3px 6px rgba(255, 255, 255, 0.23);
-  --shadow-large: 0 10px 20px rgba(255, 255, 255, 0.19), 0 6px 6px rgba(255, 255, 255, 0.23);
+  /* Brand Colors */
+  --brand-1000: #ffbfe4;
+  --brand-800: #ffbfe4cc;
+  --brand-200: #ffbfe433;
+  --brand-50: #ffbfe40f;
+  --brand-hover: hsl(from var(--brand-1000) h s calc(l * 0.92));
+  --brand-press: hsl(from var(--brand-1000) h s calc(l * 0.84));
 
-  --grid-columns: 12;
-  --grid-gap: 16px;
+  /* Green Colors */
+  --green-1000: #8fdbb7;
+  --green-800: #8fdbb7cc;
+  --green-200: #8fdbb733;
+  --green-50: #8fdbb714;
+  --green-hover: hsl(from var(--green-1000) h s calc(l * 0.92));
+  --green-press: hsl(from var(--green-1000) h s calc(l * 0.84));
 
-  --spacing-small: 8px;
-  --spacing-medium: 16px;
-  --spacing-large: 24px;
+  /* Red Colors */
+  --red-1000: #ff9c9c;
+  --red-800: #ff9c9ccc;
+  --red-200: #ff9c9c33;
+  --red-50: #ff9c9c14;
+  --red-hover: hsl(from var(--red-1000) h s calc(l * 0.92));
+  --red-press: hsl(from var(--red-1000) h s calc(l * 0.84));
 
-  --font-size-sm: 12px;
-  --font-size-md: 16px;
-  --font-size-lg: 24px;
+  /* Amber Colors */
+  --amber-1000: #faa957;
+  --amber-800: #faa957cc;
+  --amber-200: #faa95733;
+  --amber-50: #ffc68c1a;
 
-  --font-primary: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  /* Teal Colors */
+  --teal-1000: #afcefa;
+  --teal-800: #afcefacc;
+  --teal-200: #afcefa33;
+  --teal-50: #afcefa14;
+  --teal-hover: hsl(from var(--teal-1000) h s calc(l * 0.92));
+  --teal-press: hsl(from var(--teal-1000) h s calc(l * 0.84));
+
+  /* Yellow Colors */
+  --yellow-solid-1000: #fec62e;
+  --yellow-hover: hsl(from var(--yellow-solid-1000) h s calc(l * 0.92));
+  --yellow-press: hsl(from var(--yellow-solid-1000) h s calc(l * 0.84));
+
+  /* inverse colors are not part of the semantic colors. defining inverse colors as css variables to make sure they are compatible with light/dark mode */
+
+  --text-inverse-strong: var(--grey-light-1000);
+  --text-inverse-weak: var(--grey-light-700);
+  --text-inverse-disabled: var(--grey-light-100);
+
+  --stroke-inverse-strong: var(--grey-light-500);
+  --stroke-inverse-weak: var(--grey-light-100);
+  --stroke-inverse-disabled: var(--grey-light-100);
+
+  --icon-inverse: var(--grey-light-500);
+  --icon-inverse-strong: var(--grey-light-1000);
+  --icon-inverse-disabled: var(--grey-light-100);
+
+  --fill-inverse-strong: var(--grey-solid-900);
+  --fill-inverse-weak: var(--grey-light-50);
+  --fill-inverse-hover: var(--grey-light-50);
+  --fill-inverse-press: var(--grey-light-100);
+  --fill-inverse-disabled: var(--grey-light-100);
+
+  /* background colors does not follow a consistent naming convention as rest of the semantic colors. defining background semantic colors as css variables to  make sure they are compatible with light/dark mode*/
+
+  /* Background solid colors */
+  --background-base: var(--grey-solid-900);
+  --background-raised: var(--grey-solid-850);
+  --background-overlay: var(--grey-solid-800);
+  --background-sunken: var(--grey-solid-1000);
+  --background-alternate: var(--grey-solid-850);
+  --background-brand: var(--brand-1000);
+  --background-inverse: var(--grey-solid-0);
 }
