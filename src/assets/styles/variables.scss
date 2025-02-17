@@ -1,4 +1,7 @@
 :root {
+  --black-1000: #000;
+  --white-1000: #fff;
+
   /* Grey Transparent Light Colors */
   --grey-light-1000: #001040;
   --grey-light-700: #001040b2;
@@ -111,6 +114,11 @@
 }
 
 [data-theme="dark"] {
+
+  --black-1000: #fff;
+  --white-1000: #000;
+
+
   --grey-1000: var(--grey-dark-1000);
   --grey-700: var(--grey-dark-700);
   --grey-500: var(--grey-dark-500);

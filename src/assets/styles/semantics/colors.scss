@@ -63,6 +63,7 @@ $semantic-colors: (
     ),
   ),
   fill: (
+
     strong: map.get(map.get($colors, grey), 1000),
     weak: map.get(map.get($colors, grey), 50),
     weaker: map.get(map.get($colors, grey), 25),
@@ -98,7 +99,8 @@ $semantic-colors: (
       press: var(--inverse-press),
       disabled: var(--inverse-disabled),
     ),
-    white: map.get(map.get($colors, grey), solid, 0),
+    white: map.get(map.get($colors, white), 1000),
+    black: map.get(map.get($colors, black), 1000 ), 
     yellow: map.get(map.get($colors, yellow), solid, 1000),
   ),
   background: (

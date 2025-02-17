@@ -19,7 +19,7 @@
     background-color: color-mix(
       in srgb,
       semanticsColors.semantic-color(fill, brand, strong) 92%,
-      black
+      semanticsColors.semantic-color(fill, black)
     );
   }
 
@@ -27,7 +27,7 @@
     background-color: color-mix(
       in srgb,
       semanticsColors.semantic-color(fill, brand, strong) 86%,
-      black
+      semanticsColors.semantic-color(fill, black)
     );
   }
 
@@ -36,17 +36,24 @@
   // }
 
   &.outline {
+    background: transparent;
     color: semanticsColors.semantic-color(fill, inverse, strong);
-    // border: 1px solid semanticsColors.semantic-color(fill, brand, strong);
+    border: 1px solid semanticsColors.semantic-color(fill, brand, strong);
 
     &:hover {
-      background-color: color-mix(in srgb, semanticsColors.semantic-color(fill, inverse, strong) 92%, white) !important;
-
+      background-color: color-mix(
+        in srgb,
+        semanticsColors.semantic-color(fill, inverse, strong) 92%,
+        semanticsColors.semantic-color(fill, white)
+        ) !important;
     }
 
     &:active {
-      background-color: color-mix(in srgb, semanticsColors.semantic-color(fill, inverse, strong) 86%, white) !important;
-
+      background-color: color-mix(
+        in srgb,
+        semanticsColors.semantic-color(fill, inverse, strong) 86%,
+        semanticsColors.semantic-color(fill, white)
+      ) !important;
     }
   }
 
@@ -55,11 +62,19 @@
     // color: semanticsColors.$semantic-text-on-secondary;
 
     &:hover {
-      background-color: color-mix(in srgb, semanticsColors.semantic-color(fill, strong) 92%, white);
+      background-color: color-mix(
+        in srgb,
+        semanticsColors.semantic-color(fill, strong) 92%,
+        semanticsColors.semantic-color(fill, white)
+      );
     }
 
     &:active {
-      background-color: color-mix(in srgb, semanticsColors.semantic-color(fill , strong) 86%, white);
+      background-color: color-mix(
+        in srgb,
+        semanticsColors.semantic-color(fill, strong) 86%,
+        semanticsColors.semantic-color(fill, white)
+      );
     }
   }
 
@@ -69,16 +84,24 @@
     border: 1px solid semanticsColors.semantic-color(fill, brand, strong);
 
     &:hover {
-      background-color: color-mix(in srgb, semanticsColors.semantic-color(fill, error, strong) 92%, black);
+      background-color: color-mix(
+        in srgb,
+        semanticsColors.semantic-color(fill, error, strong) 92%,
+        semanticsColors.semantic-color(fill, black)
+        );
     }
 
     &:active {
-      background-color: color-mix(in srgb, semanticsColors.semantic-color(fill, error, strong) 86%, black);
+      background-color: color-mix(
+        in srgb,
+        semanticsColors.semantic-color(fill, error, strong) 86%,
+        semanticsColors.semantic-color(fill, black)
+        );
     }
   }
 
   &.disabled {
-    background-color: semanticsColors.semantic-color(fill, error, strong);
+    background-color: semanticsColors.semantic-color(fill, disabled);
     // color: semanticsColors.$semantic-text-disabled;
     // cursor: not-allowed;
     cursor: not-allowed;
