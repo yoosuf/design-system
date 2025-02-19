@@ -1,0 +1,22 @@
+.theme-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: var(--border-radius-md);
+  color: var(--color-text-primary);
+  transition: all var(--motion-duration-base) var(--motion-easing-base);
+
+  &:hover {
+    background-color: var(--color-background-hover);
+    transform: scale(1.1);
+  }
+
+  &:active {
+    transform: scale(0.95);
+  }
+
+  svg {
+    display: block;
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "border": {
+    "semantic": {
+      "radius": {
+        "container": { "value": "{border.core.radius.lg.value}" },
+        "button": { "value": "{border.core.radius.md.value}" },
+        "input": { "value": "{border.core.radius.md.value}" },
+        "card": { "value": "{border.core.radius.xl.value}" },
+        "badge": { "value": "{border.core.radius.full.value}" }
+      },
+      "width": {
+        "focus": { "value": "{border.core.width.thick.value}" },
+        "separator": { "value": "{border.core.width.thin.value}" },
+        "divider": { "value": "{border.core.width.thin.value}" }
+      }
+    }
+  }
+}

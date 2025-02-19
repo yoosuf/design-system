@@ -1,12 +1,111 @@
-@use "semantics/colors" as semanticColor;
-@use "semantics/typography" as semanticsTypo;
-@use "semantics/spacing" as semanticsSpacing;
-@use "semantics/elevation" as semanticsElevation;
-@use "semantics/grid" as semanticsGrid;
+@use "generated/variables";
+@use "components/button";
+@use "components/theme-toggle";
 
+:root {
+  color-scheme: light dark;
+}
+
+// Light theme (default)
+:root,
+[data-theme="light"] {
+  // Background colors
+  --color-background-primary: #{variables.$theme-light-background-primary};
+  --color-background-secondary: #{variables.$theme-light-background-secondary};
+  --color-background-tertiary: #{variables.$theme-light-background-tertiary};
+
+  // Text colors
+  --color-text-primary: #{variables.$theme-light-text-primary};
+  --color-text-secondary: #{variables.$theme-light-text-secondary};
+  --color-text-disabled: #{variables.$theme-light-text-disabled};
+  --color-text-inverse: #{variables.$theme-light-text-inverse};
+
+  // Button colors
+  --color-button-primary-bg: #{variables.$theme-light-button-primary-bg};
+  --color-button-primary-text: #{variables.$theme-light-button-primary-text};
+  --color-button-primary-hover: #{variables.$theme-light-button-primary-hover};
+  --color-button-primary-active: #{variables.$theme-light-button-primary-active};
+  --color-button-primary-disabled: #{variables.$theme-light-button-primary-disabled};
+  
+  --color-button-secondary-bg: #{variables.$theme-light-button-secondary-bg};
+  --color-button-secondary-text: #{variables.$theme-light-button-secondary-text};
+  --color-button-secondary-hover: #{variables.$theme-light-button-secondary-hover};
+  --color-button-secondary-active: #{variables.$theme-light-button-secondary-active};
+  --color-button-secondary-disabled: #{variables.$theme-light-button-secondary-disabled};
+
+  --color-button-tertiary-bg: #{variables.$theme-light-button-tertiary-bg};
+  --color-button-tertiary-text: #{variables.$theme-light-button-tertiary-text};
+  --color-button-tertiary-hover: #{variables.$theme-light-button-tertiary-hover};
+  --color-button-tertiary-active: #{variables.$theme-light-button-tertiary-active};
+  
+  --color-button-outline-bg: #{variables.$theme-light-button-outline-bg};
+  --color-button-outline-text: #{variables.$theme-light-button-outline-text};
+  --color-button-outline-border: #{variables.$theme-light-button-outline-border};
+  --color-button-outline-hover: #{variables.$theme-light-button-outline-hover};
+
+  --color-button-disabled-bg: #{variables.$theme-light-button-disabled-bg};
+  --color-button-disabled-text: #{variables.$theme-light-button-disabled-text};
+
+  // Border colors
+  --color-border-default: #{variables.$theme-light-border-default};
+  --color-border-hover: #{variables.$theme-light-border-hover};
+  --color-border-focus: #{variables.$theme-light-border-focus};
+  --color-border-disabled: #{variables.$theme-light-border-disabled};
+}
+
+// Dark theme
+[data-theme="dark"] {
+  // Background colors
+  --color-background-primary: #{variables.$theme-dark-background-primary};
+  --color-background-secondary: #{variables.$theme-dark-background-secondary};
+  --color-background-tertiary: #{variables.$theme-dark-background-tertiary};
+
+  // Text colors
+  --color-text-primary: #{variables.$theme-dark-text-primary};
+  --color-text-secondary: #{variables.$theme-dark-text-secondary};
+  --color-text-disabled: #{variables.$theme-dark-text-disabled};
+  --color-text-inverse: #{variables.$theme-dark-text-inverse};
+
+  // Button colors
+  --color-button-primary-bg: #{variables.$theme-dark-button-primary-bg};
+  --color-button-primary-text: #{variables.$theme-dark-button-primary-text};
+  --color-button-primary-hover: #{variables.$theme-dark-button-primary-hover};
+  --color-button-primary-active: #{variables.$theme-dark-button-primary-active};
+  --color-button-primary-disabled: #{variables.$theme-dark-button-primary-disabled};
+  
+  --color-button-secondary-bg: #{variables.$theme-dark-button-secondary-bg};
+  --color-button-secondary-text: #{variables.$theme-dark-button-secondary-text};
+  --color-button-secondary-hover: #{variables.$theme-dark-button-secondary-hover};
+  --color-button-secondary-active: #{variables.$theme-dark-button-secondary-active};
+  --color-button-secondary-disabled: #{variables.$theme-dark-button-secondary-disabled};
+
+  --color-button-tertiary-bg: #{variables.$theme-dark-button-tertiary-bg};
+  --color-button-tertiary-text: #{variables.$theme-dark-button-tertiary-text};
+  --color-button-tertiary-hover: #{variables.$theme-dark-button-tertiary-hover};
+  --color-button-tertiary-active: #{variables.$theme-dark-button-tertiary-active};
+  
+  --color-button-outline-bg: #{variables.$theme-dark-button-outline-bg};
+  --color-button-outline-text: #{variables.$theme-dark-button-outline-text};
+  --color-button-outline-border: #{variables.$theme-dark-button-outline-border};
+  --color-button-outline-hover: #{variables.$theme-dark-button-outline-hover};
+
+  --color-button-disabled-bg: #{variables.$theme-dark-button-disabled-bg};
+  --color-button-disabled-text: #{variables.$theme-dark-button-disabled-text};
+
+  // Border colors
+  --color-border-default: #{variables.$theme-dark-border-default};
+  --color-border-hover: #{variables.$theme-dark-border-hover};
+  --color-border-focus: #{variables.$theme-dark-border-focus};
+  --color-border-disabled: #{variables.$theme-dark-border-disabled};
+}
+
+// Base styles
 body {
-  background-color: semanticColor.semantic-color(background, base);
-  color: semanticColor.semantic-color(text, strong);
-  font-family: semanticsTypo.$semantic-font-primary;
-  transition: background-color 0.3s, color 0.3s;
+  margin: 0;
+  min-height: 100vh;
+  background-color: var(--color-background-primary);
+  color: var(--color-text-primary);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }

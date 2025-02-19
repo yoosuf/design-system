@@ -1,0 +1,22 @@
+{
+  "elevation": {
+    "semantic": {
+      "shadow": {
+        "surface": {
+          "raised": { "value": "{elevation.core.shadow.sm.value}" },
+          "floating": { "value": "{elevation.core.shadow.lg.value}" },
+          "overlay": { "value": "{elevation.core.shadow.xl.value}" }
+        },
+        "component": {
+          "default": { "value": "{elevation.core.shadow.none.value}" },
+          "hover": { "value": "{elevation.core.shadow.sm.value}" },
+          "active": { "value": "{elevation.core.shadow.md.value}" }
+        }
+      },
+      "blur": {
+        "background": { "value": "{elevation.core.blur.lg.value}" },
+        "modal": { "value": "{elevation.core.blur.sm.value}" }
+      }
+    }
+  }
+}

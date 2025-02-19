@@ -1,0 +1,39 @@
+{
+  "grid": {
+    "core": {
+      "breakpoints": {
+        "xs": { "value": "320px" },
+        "sm": { "value": "640px" },
+        "md": { "value": "768px" },
+        "lg": { "value": "1024px" },
+        "xl": { "value": "1280px" },
+        "2xl": { "value": "1536px" }
+      },
+      "container": {
+        "max-width": {
+          "xs": { "value": "100%" },
+          "sm": { "value": "640px" },
+          "md": { "value": "768px" },
+          "lg": { "value": "1024px" },
+          "xl": { "value": "1280px" },
+          "2xl": { "value": "1536px" }
+        },
+        "padding": {
+          "xs": { "value": "{spacing.core.md.value}" },
+          "sm": { "value": "{spacing.core.lg.value}" },
+          "md": { "value": "{spacing.core.xl.value}" },
+          "lg": { "value": "{spacing.core.xl.value}" }
+        }
+      },
+      "columns": {
+        "count": { "value": "12" },
+        "gap": {
+          "xs": { "value": "{spacing.core.xs.value}" },
+          "sm": { "value": "{spacing.core.sm.value}" },
+          "md": { "value": "{spacing.core.md.value}" },
+          "lg": { "value": "{spacing.core.lg.value}" }
+        }
+      }
+    }
+  }
+}

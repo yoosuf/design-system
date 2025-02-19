@@ -1,0 +1,36 @@
+{
+  "color": {
+    "brand": {
+      "primary": { "value": "#0066CC" },
+      "primary-light": { "value": "#3385D6" },
+      "primary-lighter": { "value": "#66A3E0" },
+      "primary-dark": { "value": "#004C99" },
+      "primary-darker": { "value": "#003366" },
+      "secondary": { "value": "#4CAF50" },
+      "secondary-light": { "value": "#6FBF73" },
+      "secondary-lighter": { "value": "#92CF96" },
+      "secondary-dark": { "value": "#388E3C" },
+      "secondary-darker": { "value": "#255D28" },
+      "success": { "value": "#10B981" },
+      "warning": { "value": "#F59E0B" },
+      "error": { "value": "#EF4444" }
+    },
+    "core": {
+      "primary": { "value": "{color.brand.primary.value}" },
+      "secondary": { "value": "{color.brand.secondary.value}" },
+      "white": { "value": "#FFFFFF" },
+      "gray": {
+        "50": { "value": "#F9FAFB" },
+        "100": { "value": "#F3F4F6" },
+        "200": { "value": "#E5E7EB" },
+        "300": { "value": "#D1D5DB" },
+        "400": { "value": "#9CA3AF" },
+        "500": { "value": "#6B7280" },
+        "600": { "value": "#4B5563" },
+        "700": { "value": "#374151" },
+        "800": { "value": "#1F2937" },
+        "900": { "value": "#111827" }
+      }
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "spacing": {
+    "core": {
+      "0": { "value": "0" },
+      "xxs": { "value": "0.25rem" },
+      "xs": { "value": "0.5rem" },
+      "sm": { "value": "0.75rem" },
+      "md": { "value": "1rem" },
+      "lg": { "value": "1.5rem" },
+      "xl": { "value": "2rem" },
+      "xxl": { "value": "2.5rem" },
+      "3xl": { "value": "3rem" },
+      "4xl": { "value": "4rem" },
+      "5xl": { "value": "6rem" }
+    }
+  }
+}

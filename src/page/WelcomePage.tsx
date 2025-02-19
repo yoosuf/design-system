@@ -10,11 +10,11 @@ const WelcomePage: React.FC = () => {
       <div className="content">
         <h1>Buttons</h1>
         <p>Experience dynamic theme switching with a beautifully designed component.</p>
-        <Button variant="primary">Explore More</Button>
-        <Button variant="secondary">Explore More</Button>
-        <Button variant="tertiary">Explore More</Button>
-        <Button variant="outline">Explore More</Button>
-        <Button variant="disabled">Explore More</Button>
+        <Button variant="primary">Label</Button>&nbsp;
+        <Button variant="secondary">Label</Button>&nbsp;
+        <Button variant="tertiary">Label</Button>&nbsp;
+        <Button variant="outline">Label</Button>&nbsp;
+        <Button variant="disabled">Label</Button>
       </div>
 
 

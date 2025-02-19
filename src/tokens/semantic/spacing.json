@@ -1,0 +1,29 @@
+{
+  "spacing": {
+    "semantic": {
+      "component": {
+        "padding": {
+          "small": { "value": "{spacing.core.xs.value}" },
+          "medium": { "value": "{spacing.core.sm.value}" },
+          "large": { "value": "{spacing.core.md.value}" }
+        },
+        "gap": {
+          "small": { "value": "{spacing.core.xxs.value}" },
+          "medium": { "value": "{spacing.core.xs.value}" },
+          "large": { "value": "{spacing.core.sm.value}" }
+        }
+      },
+      "layout": {
+        "padding": {
+          "page": { "value": "{spacing.core.xl.value}" },
+          "section": { "value": "{spacing.core.lg.value}" },
+          "content": { "value": "{spacing.core.md.value}" }
+        },
+        "gap": {
+          "stack": { "value": "{spacing.core.lg.value}" },
+          "inline": { "value": "{spacing.core.md.value}" }
+        }
+      }
+    }
+  }
+}

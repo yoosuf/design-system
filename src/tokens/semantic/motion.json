@@ -1,0 +1,20 @@
+{
+  "motion": {
+    "semantic": {
+      "transition": {
+        "entrance": {
+          "duration": { "value": "{motion.core.duration.normal.value}" },
+          "easing": { "value": "{motion.core.easing.ease-out.value}" }
+        },
+        "exit": {
+          "duration": { "value": "{motion.core.duration.fast.value}" },
+          "easing": { "value": "{motion.core.easing.ease-in.value}" }
+        },
+        "interactive": {
+          "duration": { "value": "{motion.core.duration.fast.value}" },
+          "easing": { "value": "{motion.core.easing.ease-in-out.value}" }
+        }
+      }
+    }
+  }
+}
